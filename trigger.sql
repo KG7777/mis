@@ -1,4 +1,4 @@
--- Создаем триггерную функцию
+-- триггерная функция
 CREATE OR REPLACE FUNCTION check_department_date_open()
 RETURNS TRIGGER AS $$
 DECLARE
@@ -19,7 +19,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- Создаем триггер, который срабатывает перед вставкой
+-- Создаем триггер( перед вставкой)
 CREATE TRIGGER trg_check_department_date_open
 BEFORE INSERT ON department
 FOR EACH ROW EXECUTE FUNCTION check_department_date_open();
