@@ -1,3 +1,5 @@
+--Создать функцию, заполняющую таблицу с данными пациентов (их персональными данными и данными медицинских случаев). 
+--Один входной параметр: УИ счета.
 CREATE OR REPLACE FUNCTION public.fill_accounts_data_2(accounts_id integer)
 RETURNS void
 LANGUAGE plpgsql
