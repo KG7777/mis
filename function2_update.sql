@@ -1,3 +1,4 @@
+-- Заполнить поле 18. Необходимо вычислить хеш от полной записи в таблице и сохранить его
 CREATE OR REPLACE FUNCTION public.fill_accounts_data_2(accounts_id integer)
 RETURNS void
 LANGUAGE plpgsql
