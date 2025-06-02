@@ -1,4 +1,3 @@
-MIG, [30.05.2025 13:25]
 INSERT INTO department (id, name, code, parent_department_fk, med_org_fk, date_open, date_close) 
 VALUES 
 -- Для ГАУЗ "Клиника медицинского университета"
@@ -24,7 +23,6 @@ VALUES
 (14, 'Лесхозская Врачебная амбулатория', '2444', NULL, 4, '2000-09-04', NULL),
 (15, 'Шеморданская участковая больница', '3444', NULL, 4, '2000-09-04', NULL);
 
-MIG, [30.05.2025 13:37]
 -- Пациенты
 INSERT INTO patient (id, first_name, last_name, middle_name, birth_date) 
 VALUES 
